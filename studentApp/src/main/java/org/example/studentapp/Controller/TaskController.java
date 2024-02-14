@@ -10,9 +10,12 @@ public class TaskController {
     public String getAllTasks(){
         return "tasks/tasks";
     }
-
-    @GetMapping(value = "/addTask")
+    @GetMapping(value = "/tasks/add")
     public String getAddTask(){
         return "tasks/addTask";
+    }
+    @GetMapping(value = "/tasks/edit")
+    public String getEditTask(){
+        return "tasks/editTask";
     }
 }

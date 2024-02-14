@@ -9,11 +9,11 @@ public class StudentController {
     public String getStudentsList(){
         return "person/personList";
     }
-    @GetMapping(value = "/addStrudent")
+    @GetMapping(value = "/students/add")
     public String addStrudent(){
         return "person/addNewPerson";
     }
-    @GetMapping(value = "/editPerson")
+    @GetMapping(value = "/students/edit")
     public String getEditStudent(){
         return "person/editPerson";
     }
