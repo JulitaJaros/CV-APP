@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class StudentService {
-    StudentRepository studentRepository;
+    private final StudentRepository studentRepository;
 
     public void addStudent(StudentModel studentModel){
         studentRepository.save(studentModel);
